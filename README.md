@@ -9,6 +9,10 @@ Python scripts for flying one or more Crazyflie drones using OptiTrack (Motive) 
 [![Watch the flight demo](docs/media/video_thumbnail.jpg)](https://drive.google.com/file/d/FILE_ID/view?usp=sharing) -->
 ![Swarm flying the square pattern](media/GIFs/squareFly.gif)
 
+<p align="center">
+  <img src="docs/media/GIFs/squareFly.gif" alt="Swarm flight" width="600">
+</p>
+
 
 ---
 
