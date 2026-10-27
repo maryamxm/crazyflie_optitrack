@@ -1,0 +1,39 @@
+# ---- Virtual environments (never commit; rebuild from requirements.txt)
+.venv/
+venv/
+env/
+.env/
+.env*/
+
+# ---- Python bytecode / build output
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# ---- cflib parameter/log TOC cache (rw_cache='./cache')
+cache/
+
+# ---- OptiTrack NatNet SDK files (NaturalPoint EULA - do not redistribute)
+# Download the NatNet SDK and copy these into mocap_crazyflie/PythonClient/
+mocap_crazyflie/PythonClient/NatNetClient.py
+mocap_crazyflie/PythonClient/DataDescriptions.py
+mocap_crazyflie/PythonClient/MoCapData.py
+mocap_crazyflie/PythonClient/PythonSample.py
+mocap_crazyflie/PythonClient/PythonClient.pyproj
+mocap_crazyflie/PythonClient/PythonClient.sln
+
+# ---- Flight logs / recorded data
+*.log
+*.csv
+
+# ---- Editors / IDEs
+.vscode/
+.idea/
+*.swp
+
+# ---- OS junk
+.DS_Store
+__MACOSX/
+Thumbs.db
