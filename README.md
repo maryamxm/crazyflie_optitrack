@@ -2,6 +2,8 @@
 
 Python scripts for flying one or more Crazyflie drones using OptiTrack (Motive) motion capture as the position source. Motive streams each drone's pose over NatNet. The scripts forward it to the drone's onboard controller and run single-drone and swarm flights.
 
+> This repository is a step-by-step introduction to the lab's Crazyflie and OptiTrack setup. It is meant as a starting point: once you are familiar with the system, you can build on it for your own research and projects in the lab.
+
 ![Swarm flying the square pattern](media/GIFs/squareFly.gif)
 
 ## Repository Structure
@@ -42,7 +44,7 @@ crazyflie-optitrack/
 | NatNet SDk (Python Client) |                         |
 | Python 3.12                | 3.12.15 on macOS        |
 | cflib                      | 0.1.34                  |
-| cfclient                   | Just install the latest |
+| cfclient                   |                         |
 
 ## Installation
 
@@ -177,8 +179,3 @@ This project is licensed under the [GNU General Public License v3.0](LICENSE).
 It uses [cflib](https://github.com/bitcraze/crazyflie-lib-python) by Bitcraze, which is also licensed under GPLv3. Parts of the estimator reset and swarm flow are adapted from the cflib examples.
 
 The OptiTrack NatNet SDK files are **not** included in this repository and are covered by NaturalPoint's own licence ([OptiTrack Plugins EULA](https://www.optitrack.com/about/legal/eula.html)).
-
-  
-
-
-
