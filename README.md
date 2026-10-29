@@ -166,8 +166,8 @@ There is a dedicated documentation for each script in the docs folder.
 
 ## Acknowledgements 
 
-* [Bitcraze](https://www.bitcraze.io/)~: cflib and its examples, which the estimator reset and swarm structure are based on.
-* [OptiTrack / NaturalPoint](https://www.optitrack.com/support/downloads?cat=developer-tools)~: NatNet SDK
+* [Bitcraze](https://www.bitcraze.io/): cflib and its examples, which the estimator reset and swarm structure are based on.
+* [OptiTrack / NaturalPoint](https://www.optitrack.com/support/downloads?cat=developer-tools): NatNet SDK
 * AIM BeyonD Research Lab / Heriot-Watt University
 
 ## License 
