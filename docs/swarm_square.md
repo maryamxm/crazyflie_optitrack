@@ -61,7 +61,9 @@ Why this keeps paths apart:
 ![drone wobbling](../media/GIFs/wobble.gif)  
 
 > NOTE: The `TRANSIT_SPACING` and `TRANSIT_HEIGHT` were set to the values due to the fact that the z limit of the lab setup is different in different positions, and depending on the start position, the z limit could not reach what is given in the script. 
+
 > NOTE: This still has not been tested to confirm if it is only due to downwashing or if mocap errors contribute as well. 
+
 * **Error timing in the pattern.** `parallel_safe` waits for every drone to finish its sequence before raising. If one drone loses tracking mid-pattern, it stops, but the others finish their sequences before all drones are told to land.
 * **No crossing check.** Custom patterns are not checked for crossing paths.
 * **Fixed landing time.** Landing takes 2 s. That's fine from 0.5 m, but increase it in `land()` if you raise `FLIGHT_HEIGHT`.

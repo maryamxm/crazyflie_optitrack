@@ -160,7 +160,6 @@ python3 swarm_square.py
 | `mocap.py` | A motion capture helper for all of the other scripts | [mocap doc](docs/mocap.md) | 
 
 
-
 ## Safety
 
 * **Test with one drone first**, inside a net.
