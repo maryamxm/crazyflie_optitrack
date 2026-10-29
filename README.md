@@ -6,10 +6,11 @@ Python scripts for flying one or more Crazyflie drones using OptiTrack (Motive) 
 
 ## Repository Structure
 
+```
 crazyflie-optitrack/
 ├── requirements.txt
-├── media                  # Contain all photos and GIFs
-├── docs                   # documentations for each script and their features 
+├── media                     # Contain all photos and GIFs
+├── docs                    # documentations for each script and their features 
 └── mocap_crazyflie/
     ├── mocap.py           # Shared NatNet/Motive handling, pose forwarding, tracking checks
     ├── drone_pose.py      # Print one drone's pose from Motive (no drone connection)
@@ -19,6 +20,7 @@ crazyflie-optitrack/
     ├── swarm_status.py    # Status monitor for the swarm
     ├── cf_power.py        # Power on/off/reboot multiple drones over Crazyradio
     └── PythonClient/      # NatNet SDK files go here (not included, see below)
+```
 
 ## Hardware Requirements
 
@@ -52,18 +54,18 @@ pip install -r requirements.txt
 ```
 
 ### 2\. Crazyradio USB permissions
-The Crazyradio permissions are different for different operating systems. On MacOS just plug in and go on. Follow the instructions [getting started with crazyradio](https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyradio-2-0/) for your operating systems. 
+The Crazyradio permissions are different for different operating systems. On MacOS just plug in and go on. Follow the instructions [getting started with crazyradio](https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyradio-2-0/) for your operating system. 
 
 ### 3\. Add the NatNet SDK files
 These files are not included in this repository because NaturalPoint's license does not allow redistributing them.
-1. Download the NatNet SDK from OptiTrack: ~[OptiTrack NatNet SDK](https://optitrack.com/support/downloads/developer-tools.html)~
+1. Download the NatNet SDK from OptiTrack: [OptiTrack NatNet SDK](https://optitrack.com/support/downloads/developer-tools.html)
 2. Copy the SDK's Python sample folder into mocap_crazyflie/PythonClient/
 
 ## Motive Setup
 
 In Motive:
-1. **Rigid bodies:** create one rigid body per drone and take note of each unique Streaming ID.
-2. **Orientation:** align each rigid body's orientation with the drone's body frame (X forward). Orientation is sent to the Kalman filter, so a wrong pivot or rotation will cause bad flight.
+1. **Rigid bodies:** Create one rigid body per drone and take note of each unique Streaming ID.
+2. **Orientation:** Align each rigid body's orientation with the drone's body frame (X forward). Orientation is sent to the Kalman filter, so a wrong pivot or rotation will cause bad flight.
 3. **Streaming settings (Data Streaming pane):**
    * Broadcast Frame Data: **On**
    * Transmission Type: **Unicast**
@@ -151,12 +153,12 @@ There is a dedicated documentation for each script in the docs folder.
 * Set the flight-box limits for **your** space. The defaults are for AIM BeyonD Lab .
 * **Tracking loss** lands the affected drone. In swarm scripts, an error lands all drones.
 * **Ctrl-C** lands all drones.
-* Check batteries before flying. swarm_status.py flags resting voltage below 3.5 V.
+* Check batteries before flying `swarm_status.py` flags resting voltage below 3.5 V.
 * Keep drones at least ~0.3 m apart on the floor.
 
 ## Things to watch out for
 
-* Z_LIMITS 
+* `Z_LIMITS` 
 * `swarm_square.py` is hardcoded for 4 drones
 * Every Motive frame is forwarded to every drone. With several drones on one Crazyradio, a high Motive frame rate may congest the radio link.
 
@@ -167,4 +169,10 @@ There is a dedicated documentation for each script in the docs folder.
 * AIM BeyonD Research Lab / Heriot-Watt University
 
 ## License 
+
+
+
+  
+
+
 
