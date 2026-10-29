@@ -1,4 +1,4 @@
-# mocap.py: motion capture helper
+# `mocap.py`: motion capture helper
 
 `mocap.py` is the shared module that connects OptiTrack Motive to the Crazyflies. Every flight script (`go_to.py`, `swarm_hover.py`, `swarm_square.py`, `swarm_status.py`) uses it, so all the Motive/NatNet handling lives in one place.
 
@@ -36,12 +36,12 @@
 | stale_frames | 10 | A drone sitting perfectly still on the ground triggers it | Frozen data is forwarded for too long before being caught |
 | orientation_std_dev | 8.0e-3 | Yaw is jittery because the mocap orientation is noisy | Yaw drifts or responds slowly |
 
-> [!NOTE] At Motive's frame rate (e.g. 120 Hz), stale_frames=10 is about 80 ms of identical data.
+> NOTE: At Motive's frame rate (e.g. 120 Hz), stale_frames=10 is about 80 ms of identical data.
 
 ## Notes
 
-> [!WARNING] Tracking loss detection: currently the frozen frames are detected correctly, however the tracking loss does not work yet. 
+> WARNING: Tracking loss detection: currently the frozen frames are detected correctly, however the tracking loss does not work yet. 
 > The SDK's `NatNetClient.py` does not pass Motive's `per-rigid-body tracking_valid` flag to the rigid-body listener. If `mocap.py` uses `rigid_body_listener`, its `tracking_valid` check never takes effect, and only the timeout and frozen-frame checks protect the drone. 
 
-> [!TIP] Comment out line 2082 in `NatNetClient.py`. The line reads as `print("MoCap Frame: %d\n" % (mocap_data.prefix_data.frame_number))`, which prints the frame number of each streamed pose and orientation, which results in clutter in the terminal and will make debugging hard.
+> TIP: Comment out line 2082 in `NatNetClient.py`. The line reads as `print("MoCap Frame: %d\n" % (mocap_data.prefix_data.frame_number))`, which prints the frame number of each streamed pose and orientation, which results in clutter in the terminal and will make debugging hard.
 
