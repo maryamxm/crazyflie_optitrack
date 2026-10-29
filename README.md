@@ -172,7 +172,11 @@ There is a dedicated documentation for each script in the docs folder.
 
 ## License 
 
+This project is licensed under the [GNU General Public License v3.0](LICENSE).
 
+It uses [cflib](https://github.com/bitcraze/crazyflie-lib-python) by Bitcraze, which is also licensed under GPLv3. Parts of the estimator reset and swarm flow are adapted from the cflib examples.
+
+The OptiTrack NatNet SDK files are **not** included in this repository and are covered by NaturalPoint's own licence ([OptiTrack Plugins EULA](https://www.optitrack.com/about/legal/eula.html)).
 
   
 
