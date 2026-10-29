@@ -149,7 +149,17 @@ python3 swarm_square.py
 
 ## Scripts 
 
-There is a dedicated documentation for each script in the docs folder. 
+| Script | What it does | Read before running |
+|---|---|---|
+| `drone_pose.py` | Prints x, y, z and quaternion for one rigid body | |
+| `go_to.py` | Takeoff → fly to target → hover → land (single drone) | |
+| `swarm_hover.py` | LED check → estimator reset → arm → hover → land. Switch between sequential and parallel in `__main__` | [swarm_hover doc](docs/swarm_hover.md) |
+| `swarm_square.py` | Drones fly from anywhere to their start points (staggered transit heights), then run the pattern in parallel. Requires exactly 4 drones | [swarm_square doc](docs/swarm_square.md) |
+| `swarm_status.py` | Status snapshot or live view (`--watch`) | |
+| `cf_power.py` | `on`, `off`, `shutdown`, `reboot`, `cycle`; target with `-d` (indices) or `-u` (URIs) | |
+| `mocap.py` | A motion capture helper for all of the other scripts | [mocap doc](docs/mocap.md) | 
+
+
 
 ## Safety
 

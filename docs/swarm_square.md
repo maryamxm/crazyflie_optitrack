@@ -43,12 +43,15 @@ With the defaults:
 | 2nd                           | 0.95 m         |
 | 3rd                           | 0.80 m         |
 | 4th                           | 0.65 m         |
+
 Why this keeps paths apart:
 * **Take-off:** when a drone takes off, every drone already in the air is **higher**, so it stops below them.
 * **Moving to the start point:** each drone moves at its own height, so no two drones share a horizontal level.
 * **Descending:** every drone drops vertically over its own start point, and the start points are different, so nothing is in the way.
 
 ![start up](../media/GIFs/start.gif)
+
+> NOTE: The video is sped up for this demo.
 
 ## Limitations
 
