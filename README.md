@@ -32,6 +32,8 @@ crazyflie-optitrack/
 | Markers  | 4-5 passive markers per drone   |
 | Mocap    | 6 OptiTrack  cameras - PrimeX22 |
 
+![Crazyflie Drone](media/photos/img3.jpeg)
+
 ## Software Requirements
 
 | Item                       | Tested Version          |
