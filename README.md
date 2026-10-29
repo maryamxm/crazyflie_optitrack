@@ -4,6 +4,8 @@ Python scripts for flying one or more Crazyflie drones using OptiTrack (Motive) 
 
 > This repository is a step-by-step introduction to the lab's Crazyflie and OptiTrack setup. It is meant as a starting point: once you are familiar with the system, you can build on it for your own research and projects in the lab.
 
+[Watch the swarm flight (Google Drive)](https://drive.google.com/file/d/16GqMLl6qwMnF65R1dwrb_Jief8ajoGZj/view?usp=sharing). 
+
 ![Swarm flying the square pattern](media/GIFs/squareFly.gif)
 
 ## Repository Structure
