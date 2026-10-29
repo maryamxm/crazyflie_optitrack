@@ -11,8 +11,8 @@ Python scripts for flying one or more Crazyflie drones using OptiTrack (Motive) 
 ```
 crazyflie-optitrack/
 ├── requirements.txt
-├── media                     # Contain all photos and GIFs
-├── docs                    # documentations for each script and their features 
+├── media/                 # Contain all photos and GIFs
+├── docs/                  # documentations for each script and their features 
 └── mocap_crazyflie/
     ├── mocap.py           # Shared NatNet/Motive handling, pose forwarding, tracking checks
     ├── drone_pose.py      # Print one drone's pose from Motive (no drone connection)
