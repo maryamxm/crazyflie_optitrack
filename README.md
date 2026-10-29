@@ -74,7 +74,7 @@ In Motive:
    * Up Axis: **Z Up**
    * Local Interface: <the Motive PC's IP on the shared network>
    
-> [!NOTE] The drones will be sharing the same global coordinate system as Motive. The coordinates are set when calibration has been done in Motive. Note that different calibrations might have different orientations and zero positions. 
+> The drones will be sharing the same global coordinate system as Motive. The coordinates are set when calibration has been done in Motive. Note that different calibrations might have different orientations and zero positions. 
 
 ## Network Setup
 
@@ -100,7 +100,7 @@ What to do:
 }
 ```
 
-> [!NOTE] URI format: `radio://<radio number>/<channel>/<data rate>/<address>` - **Radio number:** which Crazyradio to use (0, 1, …), in the order the radios are detected automatically.
+> URI format: `radio://<radio number>/<channel>/<data rate>/<address>` - **Radio number:** which Crazyradio to use (0, 1, …), in the order the radios are detected automatically.
 > - **Channel:** 0–80. Use a different channel for each radio. 
 > - **Address:** must be unique for every drone.
 > - **Data rate**: If it is set to 2M, make sure to separate the channels by 2 numbers, e.g. two drones on channel 60 and the other two should be on channel 62. 
@@ -166,8 +166,8 @@ There is a dedicated documentation for each script in the docs folder.
 
 ## Acknowledgements 
 
-* ~[Bitcraze](https://www.bitcraze.io/)~: cflib and its examples, which the estimator reset and swarm structure are based on.
-* ~[OptiTrack / NaturalPoint](https://optitrack.com/)~: NatNet SDK
+* [Bitcraze](https://www.bitcraze.io/)~: cflib and its examples, which the estimator reset and swarm structure are based on.
+* [OptiTrack / NaturalPoint](https://www.optitrack.com/support/downloads?cat=developer-tools)~: NatNet SDK
 * AIM BeyonD Research Lab / Heriot-Watt University
 
 ## License 
