@@ -48,7 +48,7 @@ Why this keeps paths apart:
 * **Moving to the start point:** each drone moves at its own height, so no two drones share a horizontal level.
 * **Descending:** every drone drops vertically over its own start point, and the start points are different, so nothing is in the way.
 
-![Swarm flying the square pattern](media/GIFs/start.gif)
+![start up](../media/GIFs/start.gif)
 
 ## Limitations
 
