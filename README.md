@@ -44,7 +44,7 @@ crazyflie-optitrack/
 |----------------------------|-------------------------|
 | Motive                     | Motive:Body 3.3.4.1     |
 | NatNet SDk (Python Client) |                         |
-| Python 3.12                | 3.12.15 on macOS        |
+| Python 3.12                | 3.12.15        |
 | cflib                      | 0.1.34                  |
 | cfclient                   |                         |
 
