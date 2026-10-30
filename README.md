@@ -2,7 +2,7 @@
 
 Python scripts for flying one or more Crazyflie drones using OptiTrack (Motive) motion capture as the position source. Motive streams each drone's pose over NatNet. The scripts forward it to the drone's onboard controller and run single-drone and swarm flights.
 
-> This repository is a step-by-step introduction to the lab's Crazyflie and OptiTrack setup. It is meant as a starting point: once you are familiar with the system, you can build on it for your own research and projects in the lab.
+> This repository is a step-by-step introduction to the lab's Crazyflie and OptiTrack setup. It is meant as a starting point: once you are familiar with the system, you can build on it for your own research and projects in the lab [AIM BeyounD Research Lab](https://github.com/HWUD-AIMBeyonD). 
 
 [Watch the swarm flight (Google Drive)](https://drive.google.com/file/d/16GqMLl6qwMnF65R1dwrb_Jief8ajoGZj/view?usp=sharing). 
 
