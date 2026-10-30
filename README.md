@@ -176,6 +176,7 @@ python3 swarm_square.py
 * `Z_LIMITS` 
 * `swarm_square.py` is hardcoded for 4 drones
 * Every Motive frame is forwarded to every drone. With several drones on one Crazyradio, a high Motive frame rate may congest the radio link.
+* Align the drone's orientation with the x axis of the global framebefore running the codes.
 
 ## Acknowledgements 
 
