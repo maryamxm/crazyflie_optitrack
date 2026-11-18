@@ -52,7 +52,7 @@ crazyflie-optitrack/
 
 ### 1\. Clone and set up a virtual environment
 ```
-git clone https://github.com/maryamxm/crazyflie-optitrack.git
+git clone https://github.com/maryamxm/crazyflie_optitrack.git
 cd crazyflie-optitrack
 python3.12 -m venv .venv
 source .venv/bin/activate
